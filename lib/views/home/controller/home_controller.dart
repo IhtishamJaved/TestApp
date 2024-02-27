@@ -40,10 +40,8 @@ class HomeCtrl extends GetxController {
                   List.from(jsonData.map((post) => HomeModel.fromJson(post)));
             }
             if (tempPostList.isNotEmpty) {
-              print(postList.length);
               for (int i = 0; i < 15; i++) {
                 postList.add(tempPostList[i]);
-                print(i);
               }
             }
           }
